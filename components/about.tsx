@@ -45,8 +45,8 @@ export function About() {
           {/* Right Column - Scrollable Content */}
           <div className="flex flex-col justify-center py-10 md:py-20">
             <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={false}
+              animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-sm font-medium tracking-widest uppercase text-white/50 mb-8 block"
             >
@@ -54,8 +54,8 @@ export function About() {
             </motion.span>
 
             <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={false}
+              animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight mb-12 mix-blend-screen"
@@ -68,8 +68,8 @@ export function About() {
 
             <div className="space-y-8 text-lg md:text-xl text-white/70 font-light leading-relaxed max-w-lg">
               <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={false}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
@@ -78,8 +78,8 @@ export function About() {
                 precision-targeted Meta Ads, and strategic GMB & SEO solutions.
               </motion.p>
               <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={false}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
               >

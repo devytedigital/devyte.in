@@ -40,8 +40,8 @@ export function Services() {
           <div className="border-r border-black/10 flex flex-col justify-between pt-12 pr-0 lg:pr-12 pb-12 lg:pb-0">
             <div>
               <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={false}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight"
               >
