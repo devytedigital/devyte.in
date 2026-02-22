@@ -24,14 +24,11 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 w-full max-w-5xl mx-auto items-center">
                 <a
                   href="mailto:devyte.digital@gmail.com"
-                  className="flex flex-col items-center gap-4 group"
+                  className="flex flex-col items-center gap-2 group"
                 >
-                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
-                    <Mail className="w-5 h-5" />
-                  </div>
                   <div className="text-center">
                     <h3 className="text-sm text-white/40 uppercase tracking-widest mb-1">
                       Email Us
@@ -43,24 +40,18 @@ export default function ContactPage() {
                 </a>
 
                 <a
-                  href="tel:+910000000000"
-                  className="flex flex-col items-center gap-4 group"
+                  href="tel:+919747659606"
+                  className="flex flex-col items-center gap-2 group"
                 >
-                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
-                    <Phone className="w-5 h-5" />
-                  </div>
                   <div className="text-center">
                     <h3 className="text-sm text-white/40 uppercase tracking-widest mb-1">
                       Call Us
                     </h3>
-                    <p className="text-lg font-light">+91 00000 00000</p>
+                    <p className="text-lg font-light">+91 97476 59606</p>
                   </div>
                 </a>
 
-                <div className="flex flex-col items-center gap-4">
-                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center">
-                    <MapPin className="w-5 h-5" />
-                  </div>
+                <div className="flex flex-col items-center gap-2 sm:col-span-2 lg:col-span-1">
                   <div className="text-center">
                     <h3 className="text-sm text-white/40 uppercase tracking-widest mb-1">
                       Visit Us

@@ -28,8 +28,8 @@ export function AboutVision() {
                 Our Vision
               </h4>
               <p className="text-2xl text-white/70 font-light leading-relaxed">
-                As a premier web development company in Kerala, our vision is to
-                merge artistic expression with technical precision, creating
+                As a premier digital solution company in Kerala, our vision is
+                to merge artistic expression with technical precision, creating
                 digital destinations that redefine industry standards in India.
               </p>
             </div>

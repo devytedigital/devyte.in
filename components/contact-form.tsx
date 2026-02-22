@@ -38,7 +38,7 @@ export function ContactForm() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="w-full bg-white/5 backdrop-blur-sm border border-white/10 p-8 md:p-12 rounded-2xl"
+      className="w-full bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-12 rounded-2xl"
     >
       {submitted ? (
         <div className="text-center py-20">
