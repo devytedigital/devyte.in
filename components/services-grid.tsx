@@ -4,62 +4,40 @@ import Link from "next/link";
 const services = [
   {
     id: "01",
-    title: "Web Development",
+    title: "Web App Development",
     description:
-      "As a leading digital solution company in India, Devyte offers custom website development services. We are a top-rated Next.js development company in India and a React web development agency, specializing in e-commerce website development in Kerala and affordable digital solution company in Kerala solutions. Whether you need a business website development services or a best digital solution company for small business Kerala, Devyte web development delivers high-performance results. Digital solution company Kozhikode and beyond.",
-    tags: [
-      "Next.js Development Company",
-      "React Agency",
-      "E-commerce Kerala",
-      "Custom Dev",
-    ],
+      "As a leading digital solution company in India, Devyte offers custom website development services. We are a top-rated Next.js development company in India and a React web development agency.",
+    tags: ["Next.js Development", "React Agency", "E-commerce", "Custom Dev"],
   },
   {
     id: "02",
-    title: "App Development",
+    title: "Mobile App Development",
     description:
-      "Devyte is a premier mobile app development company in Kerala and a mobile app UI UX design agency. We build intuitive native and cross-platform experiences. As a web design and development agency in Kerala, we offer custom React website development in India. Looking for an app development company in Malappuram? Our expertise as a digital marketing agency Trivandrum helps bridge the gap between product and user.",
+      "Devyte is a premier mobile app development company. We build intuitive native and cross-platform experiences designed for engagement and scale.",
     tags: [
-      "Mobile App Development Kerala",
+      "Mobile App Development",
       "UI UX Agency",
-      "Malappuram Dev",
+      "iOS & Android",
       "Flutter",
     ],
   },
   {
     id: "03",
-    title: "SEO Strategy",
+    title: "SEO & Local Audit",
     description:
-      "Drive traffic with the best SEO company in Kerala. Devyte provides technical SEO services in India, on-page SEO services, and local SEO services in Kerala. We are a Google ranking services India leader, offering SEO services for small businesses in Kerala and comprehensive Devyte SEO services. Our SEO services Kochi specialists ensure your brand stays on top. Website and SEO package for startups India available.",
-    tags: [
-      "Technical SEO India",
-      "Local SEO Kerala",
-      "Kochi SEO",
-      "Google Ranking",
-    ],
+      "Drive organic traffic with the best SEO strategies. Devyte provides technical SEO, on-page optimization, and local GMB profile growth to dominate search rankings.",
+    tags: ["Technical SEO", "Local SEO", "GMB Optimization", "Google Ranking"],
   },
   {
     id: "04",
-    title: "GMB & Local SEO",
+    title: "Meta Ads Management",
     description:
-      "Maximize your local reach with Google My Business setup service and GMB profile optimization in Kerala. Devyte is an expert in local business SEO Kerala and Google Business profile verification help. We provide Google Business profile setup for local shops to ensure you dominate local keywords. Boost your visibility with local SEO services in Kerala and GMB profile optimization Kerala.",
+      "Scale your ROI with results-driven Facebook and Instagram ads. Devyte offers Meta ads management services and paid ads management for high-growth brands.",
     tags: [
-      "GMB Optimization Kerala",
-      "Local Business SEO",
-      "GMB Setup",
-      "Google Business",
-    ],
-  },
-  {
-    id: "05",
-    title: "Digital Marketing & Ads",
-    description:
-      "Scale your ROI with a results-driven Facebook ads agency in Kerala and Instagram ads agency in India. Devyte offers Meta ads management services and paid ads management in Kerala. Whether you need Facebook ads for small business Kerala or a full-scale digital marketing agency Trivandrum, our data-backed Instagram ads agency India strategies deliver performance. Best for SaaS UI design company growth.",
-    tags: [
-      "Facebook Ads Kerala",
-      "Instagram Ads India",
+      "Facebook Ads",
+      "Instagram Ads",
       "Meta Ads Management",
-      "Trivandrum Marketing",
+      "ROI Focused",
     ],
   },
 ];

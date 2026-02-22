@@ -11,57 +11,45 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "NOTES ON VISION",
-    category: "12 IMAGES",
+    title: "Vantage Mobile",
+    category: "Mobile App",
     image:
-      "https://images.unsplash.com/photo-1542272201-98782a20b8f4?q=80&w=1887&auto=format&fit=crop",
+      "https://i.pinimg.com/1200x/0e/4c/3d/0e4c3d8ef49f240ce4bc25aedc4f223a.jpg",
     description:
-      "An exploration of visual perception through modern lens and abstract forms.",
+      "A high-performance real estate tracking application for modern investors.",
     year: "2024",
-    domain: "www.notesonvision.com",
+    domain: "vantage-app.io",
   },
   {
     id: 2,
-    title: "UNDESIGNATED",
-    category: "08 IMAGES",
+    title: "Nova Dashboard",
+    category: "Web App",
     image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop",
-    description:
-      "Challenging the boundaries of conventional design systems in public spaces.",
-    year: "2023",
-    domain: "www.undesignated.studio",
+      "https://i.pinimg.com/1200x/c4/c7/c4/c4c7c4f3de4f7007426b1ba5686b810e.jpg",
+    description: "Cloud-based analytics workbench for data-driven enterprises.",
+    year: "2024",
+    domain: "nova-platform.com",
   },
   {
     id: 3,
-    title: "FLORENCE",
-    category: "23 IMAGES",
+    title: "FitPulse App",
+    category: "Mobile App",
     image:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop",
+      "https://i.pinimg.com/1200x/37/ae/c5/37aec5b91b8771da6085c893a780cfe1.jpg",
     description:
-      "A digital renaissance showcasing the intersection of history and modern tech.",
+      "Health and fitness companion with real-time biometric tracking.",
     year: "2024",
-    domain: "www.florence-digital.it",
+    domain: "fitpulse.io",
   },
   {
     id: 4,
-    title: "COHERENCE",
-    category: "15 IMAGES",
+    title: "Nexus CRM",
+    category: "Web App",
     image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop",
+      "https://i.pinimg.com/1200x/24/0a/da/240adac647c3be4b1492fa23704a1c1a.jpg",
     description:
-      "Finding harmony in chaos through minimal art and strategic branding.",
+      "Streamlined customer relationship management for service-based businesses.",
     year: "2023",
-    domain: "www.coherence-agency.com",
-  },
-  {
-    id: 5,
-    title: "WESTERN",
-    category: "10 IMAGES",
-    image:
-      "https://images.unsplash.com/photo-1529139574466-a302d20525a9?q=80&w=2576&auto=format&fit=crop",
-    description:
-      "Redefining the western aesthetic for a global digital audience.",
-    year: "2024",
-    domain: "www.western-redefined.com",
+    domain: "nexus-crm.com",
   },
 ];
