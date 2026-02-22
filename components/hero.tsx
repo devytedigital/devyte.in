@@ -46,7 +46,7 @@ export function Hero() {
       <div className="relative z-10 w-full max-w-[90vw] mx-auto text-center flex flex-col items-center justify-center mix-blend-difference">
         {/* Line 1 */}
         <motion.h1
-          initial={{ y: 100, opacity: 0 }}
+          initial={false}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="text-[12vw] md:text-[11vw] leading-[0.85] font-light tracking-tighter"
@@ -56,7 +56,7 @@ export function Hero() {
 
         {/* Line 2 */}
         <motion.h1
-          initial={{ y: 100, opacity: 0 }}
+          initial={false}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="text-[12vw] md:text-[11vw] leading-[0.85] font-light tracking-tighter"
@@ -66,13 +66,21 @@ export function Hero() {
 
         {/* Line 3 */}
         <motion.h1
-          initial={{ y: 100, opacity: 0 }}
+          initial={false}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-[12vw] md:text-[11vw] leading-[0.85] font-light tracking-tighter"
         >
           YOU GROW
         </motion.h1>
+
+        <motion.p
+          initial={false}
+          animate={{ opacity: 1 }}
+          className="mt-8 text-sm md:text-base tracking-[0.3em] uppercase text-white/40 font-medium"
+        >
+          Best Web Development Company in Kerala
+        </motion.p>
       </div>
 
       {/* Floating Gradient for subtle depth (Optional, keeping it very subtle for this clean look) */}

@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: {
-    default: "Devyte Digital | Digital Pore Solution Agency",
+    default: "Devyte | Best Web Development Company in Kerala & India",
     template: "%s | Devyte",
   },
   description:
-    "Expert digital solution agency in Kerala, India. We providing high-performance Web & Mobile App UI/UX Development, SEO, GMB Optimization, and Meta Ads Management.",
+    "Devyte is a premium digital agency and the best web development company in Kerala. We specialize in custom website development, UI/UX design, and SEO services across India.",
   keywords: [
     "Digital solution company in Kerala",
     "Website development company in India",
