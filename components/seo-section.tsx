@@ -5,13 +5,13 @@ const keywords = [
     category: "Development",
     icon: <Globe className="w-6 h-6" />,
     items: [
-      "Web development company in Kerala",
-      "Website development company in India",
-      "Custom website development services",
+      "Digital solution company in Kerala",
+      "Digital solution company in India",
+      "Custom digital solution services",
       "Mobile app development company Kerala",
-      "React web development agency",
+      "React digital solution agency",
       "Next.js development company India",
-      "E-commerce website development Kerala",
+      "E-commerce solution company Kerala",
     ],
   },
   {

@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     template: "%s | Devyte",
   },
   description:
-    "Devyte is a premium digital agency specializing in custom web development, app development, and SEO services in Kerala, India. We help businesses grow through precision design and performance marketing.",
+    "Premium digital solution company in Kerala, India. Specializing in custom web/app development and performance marketing.",
   keywords: [
-    "Web Development Kerala",
+    "Digital solution company in Kerala",
     "Website development company in India",
     "Custom website development services",
     "Mobile app development company Kerala",
@@ -38,7 +38,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://devyte.in",
     title: "Devyte | Web Development & Digital Marketing Agency",
-    description: "Premium web and app development agency in Kerala, India.",
+    description:
+      "Premium digital solution company in Kerala, India. Custom web/app development and performance marketing.",
     siteName: "Devyte",
   },
   twitter: {
