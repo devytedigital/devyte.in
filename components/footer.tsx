@@ -33,7 +33,6 @@ export function Footer() {
                   { name: "Services", href: "/services" },
                   { name: "About", href: "/about" },
                   { name: "Contact", href: "/contact" },
-                  { name: "See Map", href: "https://maps.google.com" },
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
@@ -53,18 +52,28 @@ export function Footer() {
               </h4>
               <ul className="space-y-4 text-sm md:text-base font-light">
                 {[
-                  "Instagram",
-                  "Twitter",
-                  "LinkedIn",
-                  "Behance",
-                  "Dribbble",
+                  {
+                    name: "Instagram",
+                    href: "https://www.instagram.com/devyte.digital/",
+                  },
+                  { name: "X", href: "https://x.com/devyte_digital" },
+                  {
+                    name: "LinkedIn",
+                    href: "https://www.linkedin.com/in/devyte-digital-b899a03b2/",
+                  },
+                  {
+                    name: "Behance",
+                    href: "https://www.behance.net/devytedigital",
+                  },
                 ].map((item) => (
-                  <li key={item}>
+                  <li key={item.name}>
                     <Link
-                      href="#"
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="hover:text-blue-400 transition-colors"
                     >
-                      {item}
+                      {item.name}
                     </Link>
                   </li>
                 ))}
@@ -112,6 +121,14 @@ export function Footer() {
               </Link>
               <Link href="/faq" className="hover:text-white transition-colors">
                 FAQ
+              </Link>
+              <Link
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                See Map
               </Link>
             </div>
           </div>
