@@ -59,8 +59,8 @@ export default function SEOPage() {
               </h3>
               <p className="text-white/30 font-light leading-relaxed">
                 We prioritize "Commercial Intent" keywords over informational
-                ones, focusing on service-ready users looking for "Web
-                development company" or "SEO services".
+                ones, focusing on service-ready users looking for "Web digital
+                solution company" or "SEO services".
               </p>
             </div>
             <div>
