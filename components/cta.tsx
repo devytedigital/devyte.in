@@ -6,7 +6,11 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+const ctaImages = [
+  "https://i.pinimg.com/1200x/05/fb/b3/05fbb34c9d10d17802c9bdb35460f4c4.jpg",
+  "https://i.pinimg.com/736x/68/3e/a6/683ea6a7c01cdaf20d9570037b6c4c68.jpg",
+  "https://i.pinimg.com/736x/a0/47/79/a04779de38f77093338cb4c9ca3d0952.jpg",
+];
 
 export function CTA() {
   const textRef = useRef<HTMLSpanElement>(null);
@@ -56,15 +60,15 @@ export function CTA() {
 
             {/* Inline Visual: Avatar Group Placeholder */}
             <span className="inline-flex -space-x-4 mx-4 align-middle">
-              {[1, 2, 3].map((i) => (
+              {ctaImages.map((image, i) => (
                 <div
                   key={i}
-                  className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-gray-200 overflow-hidden bg-gray-300"
+                  className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-white/10 md:border-4 md:border-white/20 overflow-hidden bg-gray-900 shadow-2xl"
                 >
                   <img
-                    src={`https://images.unsplash.com/photo-${1500000000000 + i}?w=100&h=100&fit=crop`}
-                    alt="Avatar"
-                    className="w-full h-full object-cover grayscale"
+                    src={image}
+                    alt={`Highlight ${i + 1}`}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               ))}

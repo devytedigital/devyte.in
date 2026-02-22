@@ -73,9 +73,9 @@ export function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                We are a full stack digital powerhouse specializing in high
-                performance Web & Mobile App Development, precision targeted
-                Meta Ads, and strategic GMB SEO.
+                We are a full stack digital powerhouse providing
+                high-performance Web & Mobile App UI/UX Development,
+                precision-targeted Meta Ads, and strategic GMB & SEO solutions.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}

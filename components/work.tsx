@@ -67,44 +67,41 @@ export function Work() {
         </motion.h2>
       </div>
 
-      {/* Horizontal Gallery */}
-      <div
-        ref={scrollRef}
-        className="flex gap-8 overflow-x-auto px-6 md:px-12 pb-12 scrollbar-hide snap-x snap-mandatory"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-      >
-        {projects.map((project) => (
-          <motion.div
-            key={project.id}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="flex-shrink-0 w-[85vw] md:w-[30vw] snap-center group cursor-pointer"
-          >
-            {/* Image Container */}
-            <div className="relative aspect-[3/4] overflow-hidden mb-6 bg-gray-900">
-              <div className="absolute inset-0 bg-white/5 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none" />
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
-            </div>
-
-            {/* Content */}
-            <div className="text-center md:text-left">
-              <h3 className="text-xl md:text-2xl font-light tracking-wider mb-2 relative inline-block">
-                {project.title}
-                <span className="absolute left-0 -bottom-1 w-full h-[1px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left" />
-              </h3>
-              <p className="text-xs md:text-sm text-white/40 tracking-widest uppercase font-medium">
-                {project.category}
-              </p>
-            </div>
-          </motion.div>
-        ))}
-        {/* Spacer for right padding */}
-        <div className="w-1 md:w-12 flex-shrink-0" />
+      {/* Cinematic Grid for Home Page (3 Projects) */}
+      <div className="container mx-auto px-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group cursor-pointer flex flex-col space-y-6"
+            >
+              <Link href="/work" className="block">
+                <div className="relative aspect-[3/4] overflow-hidden bg-zinc-900 shadow-2xl">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                <div className="flex flex-col space-y-1 mt-6">
+                  <h3 className="text-lg md:text-xl font-medium tracking-widest uppercase transition-colors duration-300 group-hover:text-zinc-400">
+                    {project.title}
+                  </h3>
+                  {project.category && (
+                    <span className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-light">
+                      {project.category}
+                    </span>
+                  )}
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {/* Footer / Navigation */}
