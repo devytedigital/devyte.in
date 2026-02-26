@@ -62,6 +62,10 @@ export function Footer() {
                     href: "https://www.linkedin.com/in/devyte-digital-b899a03b2/",
                   },
                   {
+                    name: "WhatsApp",
+                    href: "https://wa.me/919747659606",
+                  },
+                  {
                     name: "Behance",
                     href: "https://www.behance.net/devytedigital",
                   },
