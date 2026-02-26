@@ -42,6 +42,14 @@ export const metadata: Metadata = {
     description:
       "Full-service digital agency and consultancy in Kerala. Specialist in Web/Mobile UI/UX, SEO, GMB, and Performance Marketing.",
     siteName: "Devyte",
+    images: [
+      {
+        url: "/icon.png",
+        width: 1024,
+        height: 1024,
+        alt: "Devyte Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -49,6 +57,7 @@ export const metadata: Metadata = {
     description:
       "Shaping the business of digital experiences with custom web and app solutions.",
     creator: "@devytedigital",
+    images: ["/icon.png"],
   },
   robots: {
     index: true,
