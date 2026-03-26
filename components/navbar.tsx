@@ -128,7 +128,7 @@ export function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-4xl font-light text-white hover:text-blue-500 transition-colors tracking-tight"
+                    className="text-4xl font-light text-white hover:text-[#ef876c] transition-colors tracking-tight"
                   >
                     {link.name}
                   </Link>

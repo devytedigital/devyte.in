@@ -36,12 +36,12 @@ export function ContactForm() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="w-full bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-12 rounded-2xl"
+      className="w-full"
     >
       {submitted ? (
-        <div className="text-center py-20">
+        <div className="text-left py-20 pb-40">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -49,25 +49,23 @@ export function ContactForm() {
           >
             ✓
           </motion.div>
-          <h3 className="text-2xl font-bold text-white mb-2">Message Sent</h3>
-          <p className="text-white/60">
-            We'll get back to you as soon as possible.
+          <h3 className="text-3xl md:text-5xl font-normal tracking-tighter lowercase mb-4">message sent successfully</h3>
+          <p className="text-xl md:text-2xl font-light text-white/50 lowercase">
+            we will be in touch with you shortly.
           </p>
-          <Button
-            variant="link"
-            className="mt-8 text-blue-400"
+          <button
+            className="mt-12 text-lg text-white/40 hover:text-white transition-colors underline underline-offset-8 lowercase"
             onClick={() => setSubmitted(false)}
           >
-            Send another message
-          </Button>
+            send another message
+          </button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {/* Name */}
             <div className="space-y-2">
-              <label htmlFor="name" className="text-sm text-white/60">
-                Name
-              </label>
+              <label htmlFor="name" className="text-[10px] uppercase tracking-[0.4em] text-white/30">your name</label>
               <input
                 id="name"
                 name="name"
@@ -75,14 +73,13 @@ export function ContactForm() {
                 required
                 value={formState.name}
                 onChange={handleChange}
-                className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-blue-500 transition-colors"
-                placeholder="John Doe"
+                className="w-full bg-transparent border-b border-white/10 py-3 text-lg md:text-xl font-light text-white focus:outline-none focus:border-white transition-colors"
+                placeholder="What's your name?"
               />
             </div>
+            {/* Email */}
             <div className="space-y-2">
-              <label htmlFor="email" className="text-sm text-white/60">
-                Email
-              </label>
+              <label htmlFor="email" className="text-[10px] uppercase tracking-[0.4em] text-white/30">your email</label>
               <input
                 id="email"
                 name="email"
@@ -90,16 +87,15 @@ export function ContactForm() {
                 required
                 value={formState.email}
                 onChange={handleChange}
-                className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-blue-500 transition-colors"
-                placeholder="john@example.com"
+                className="w-full bg-transparent border-b border-white/10 py-3 text-lg md:text-xl font-light text-white focus:outline-none focus:border-white transition-colors"
+                placeholder="Your email address?"
               />
             </div>
           </div>
 
+          {/* Subject */}
           <div className="space-y-2">
-            <label htmlFor="subject" className="text-sm text-white/60">
-              Subject
-            </label>
+            <label htmlFor="subject" className="text-[10px] uppercase tracking-[0.4em] text-white/30">inquiry type</label>
             <input
               id="subject"
               name="subject"
@@ -107,15 +103,14 @@ export function ContactForm() {
               required
               value={formState.subject}
               onChange={handleChange}
-              className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-blue-500 transition-colors"
-              placeholder="Project Inquiry"
+              className="w-full bg-transparent border-b border-white/10 py-3 text-lg md:text-xl font-light text-white focus:outline-none focus:border-white transition-colors"
+              placeholder="What can we help you with?"
             />
           </div>
 
+          {/* Message */}
           <div className="space-y-2">
-            <label htmlFor="message" className="text-sm text-white/60">
-              Message
-            </label>
+            <label htmlFor="message" className="text-[10px] uppercase tracking-[0.4em] text-white/30">your message</label>
             <textarea
               id="message"
               name="message"
@@ -123,18 +118,23 @@ export function ContactForm() {
               rows={4}
               value={formState.message}
               onChange={handleChange}
-              className="w-full bg-transparent border-b border-white/20 py-2 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none"
-              placeholder="Tell us about your project..."
+              className="w-full bg-transparent border-b border-white/10 py-3 text-lg md:text-xl font-light text-white focus:outline-none focus:border-white transition-colors resize-none"
+              placeholder="Tell us about your project or vision..."
             />
           </div>
 
-          <Button
+          <button
             type="submit"
-            className="w-full bg-white text-black hover:bg-white/90 rounded-full py-6 text-lg mt-4"
+            className="group relative flex items-center gap-6 pt-4 pb-2 md:pt-6 md:pb-4 w-fit cursor-pointer"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </Button>
+             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
+                <span className="text-base md:text-xl">→</span>
+             </div>
+             <span className="text-2xl md:text-3xl font-normal tracking-tighter lowercase group-hover:translate-x-4 transition-transform duration-500">
+                {isSubmitting ? "Sending..." : "Send Message"}
+             </span>
+          </button>
         </form>
       )}
     </motion.div>

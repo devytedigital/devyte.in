@@ -1,21 +1,21 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { AboutIntro } from "@/components/about-page/intro";
+import { AboutHero } from "@/components/about-page/hero";
 import { AboutVision } from "@/components/about-page/vision";
-import { AboutStats } from "@/components/about-page/stats-grid";
-import { TeamFeatured } from "@/components/about-page/team-featured";
+import { AboutSuccess } from "@/components/about-page/success";
+import { AboutTeam } from "@/components/about-page/team";
+import { CTA } from "@/components/cta";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gray-200 text-black selection:bg-blue-500/30">
+    <main className="min-h-screen bg-[#191816] text-white selection:bg-blue-500/30">
       <Navbar />
 
-      <div className="pt-20">
-        <AboutIntro />
-        <AboutVision />
-        <TeamFeatured />
-    
-      </div>
+      <AboutHero />
+      <AboutVision />
+      <AboutSuccess />
+      <AboutTeam />
+      <CTA />
 
       <Footer />
     </main>

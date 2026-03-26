@@ -1,11 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto, Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Script from "next/script";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-sans",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: "variable",
+  variable: "--font-serif",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -80,12 +95,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-black font-sans antialiased selection:bg-white/20",
+          roboto.variable,
+          fraunces.variable,
           inter.variable,
         )}
+        suppressHydrationWarning
       >
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QNLGYGSCJT"

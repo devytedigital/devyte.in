@@ -1,75 +1,60 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export function AboutVision() {
+  const sections = [
+    {
+      title: "Our Vision",
+      content: "To be the partner behind growth — where every product we build helps the business grow, helps teams perform better, and creates opportunity for the people around it."
+    },
+    {
+      title: "Our Mission",
+      content: "To build reliable mobile apps and web applications with discipline — so businesses can launch, learn, improve, and scale without breaking."
+    },
+    {
+      title: "Our Values",
+      content: "We do the right work, the right way. Clear communication, high standards, and accountability — because we only win when our clients win."
+    }
+  ];
+
   return (
-    <section className="py-32 bg-black text-white relative isolate overflow-hidden">
-      <div className="container mx-auto px-6">
-        {/* Section Number */}
-        <div className="mb-20 border-b border-white/20 pb-8 flex justify-between items-end">
-          <span className="text-sm font-medium tracking-widest uppercase text-white/50 bg-white/5 px-3 py-1 rounded-full">
-            Section 1
-          </span>
-          <h2 className="text-9xl font-bold leading-none tracking-tighter opacity-20 select-none">
-            01
-          </h2>
-        </div>
+    <section className="bg-[#191816] text-white py-16 md:py-32">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
+          {/* Left: Large Statement */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="flex flex-col justify-start"
+          >
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-[1.05] tracking-tighter">
+              Empowering Businesses <br /> 
+              <span className="text-white/20">Growth for Everyone Involved</span>
+            </h2>
+          </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-20">
-          {/* Title */}
-          <div className="animate-in fade-in slide-in-from-left-5 duration-700">
-            <h3 className="text-6xl md:text-8xl font-light tracking-tight leading-none mb-6">
-              Vision & <br /> Mission
-            </h3>
-          </div>
-
-          {/* Content */}
-          <div className="space-y-12 animate-in fade-in slide-in-from-right-5 duration-700">
-            <div>
-              <h4 className="text-xl font-medium mb-4 flex items-center gap-3">
-                <span className="w-2 h-2 bg-blue-500 rounded-full" />
-                Our Vision
-              </h4>
-              <p className="text-2xl text-white/70 font-light leading-relaxed">
-                As a premier digital solution company in Kerala, our vision is
-                to merge artistic expression with technical precision, creating
-                digital destinations that redefine industry standards in India.
-              </p>
-            </div>
-
-            <div className="h-px w-full bg-white/10" />
-
-            <div>
-              <h4 className="text-xl font-medium mb-4 flex items-center gap-3">
-                <span className="w-2 h-2 bg-purple-500 rounded-full" />
-                Our Mission
-              </h4>
-              <p className="text-lg text-white/50 leading-relaxed max-w-md">
-                We strive to empower brands with tools that scale. From
-                technical SEO services in India to advanced Meta ads management,
-                our mission is to build future-proof ecosystems for every
-                ambitious business.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Stats Row */}
-        <div className="mt-24 border-t border-white/10 pt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left animate-in fade-in duration-1000">
-          <div>
-            <h4 className="text-4xl md:text-5xl font-light mb-2">40+</h4>
-            <p className="text-white/50 text-sm tracking-widest uppercase">
-              Global Clients
-            </p>
-          </div>
-          <div>
-            <h4 className="text-4xl md:text-5xl font-light mb-2">150+</h4>
-            <p className="text-white/50 text-sm tracking-widest uppercase">
-              Successful Projects
-            </p>
-          </div>
-          <div>
-            <h4 className="text-4xl md:text-5xl font-light mb-2">5+</h4>
-            <p className="text-white/50 text-sm tracking-widest uppercase">
-              Years of Experience
-            </p>
+          {/* Right: Vision/Mission/Values Stack */}
+          <div className="space-y-12 md:space-y-16">
+            {sections.map((section, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                className="space-y-4 md:space-y-6"
+              >
+                <h3 className="text-xl md:text-2xl font-medium tracking-tight">
+                  {section.title}
+                </h3>
+                <p className="text-white/40 text-base md:text-lg lg:text-xl font-light leading-relaxed max-w-xl">
+                  {section.content}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

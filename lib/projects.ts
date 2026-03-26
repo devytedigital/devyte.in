@@ -11,45 +11,79 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Vantage Mobile",
-    category: "Mobile App",
+    title: "DX™ Fashion",
+    category: "Web app",
     image:
-      "https://i.pinimg.com/1200x/0e/4c/3d/0e4c3d8ef49f240ce4bc25aedc4f223a.jpg",
+      "https://res.cloudinary.com/ditmvxlon/image/upload/v1774514466/this_laptop_wallpaper_202603261302_wr5yzk.jpg",
     description:
-      "A high-performance real estate tracking application for modern investors.",
-    year: "2024",
-    domain: "vantage-app.io",
+      "A premium t-shirt store built with a focus on design, speed, and seamless user experience",
+    year: "2026",
+    domain: "https://dx-tee.vercel.app/",
   },
   {
     id: 2,
-    title: "Nova Dashboard",
-    category: "Web App",
+    title: "Reem Date",
+    category: "Web app",
     image:
-      "https://i.pinimg.com/1200x/c4/c7/c4/c4c7c4f3de4f7007426b1ba5686b810e.jpg",
-    description: "Cloud-based analytics workbench for data-driven enterprises.",
-    year: "2024",
-    domain: "nova-platform.com",
+      "https://res.cloudinary.com/ditmvxlon/image/upload/v1774514995/this_laptop_wallpaper_202603261419_qxwqn7.jpg",
+    description:
+      "A premium platform showcasing high-quality dates and dry fruits with a smooth user experience.",
+    year: "2025",
+    domain: "https://reemdates.in",
   },
   {
     id: 3,
-    title: "FitPulse App",
-    category: "Mobile App",
+    title: "MAMMASCRIB",
+    category: "Web app",
     image:
-      "https://i.pinimg.com/1200x/37/ae/c5/37aec5b91b8771da6085c893a780cfe1.jpg",
+      "https://res.cloudinary.com/ditmvxlon/image/upload/v1774517449/ChatGPT_Image_Mar_26_2026_02_58_16_PM_qjilun.png",
     description:
-      "Health and fitness companion with real-time biometric tracking.",
+      "A clean and modern website for a skincare brand, showcasing baby-safe and gentle soaps with a focus on trust, care, and simplicity.",
     year: "2024",
-    domain: "fitpulse.io",
+    domain: "https://mammascrib.vercel.app/",
   },
   {
     id: 4,
-    title: "Nexus CRM",
-    category: "Web App",
+    title: "Softell",
+    category: "Product Website",
     image:
-      "https://i.pinimg.com/1200x/24/0a/da/240adac647c3be4b1492fa23704a1c1a.jpg",
+      "https://res.cloudinary.com/ditmvxlon/image/upload/v1774516554/this_laptop_wallpaper_202603261445_wotfhj.jpg",
     description:
-      "Streamlined customer relationship management for service-based businesses.",
+      "A modern product-focused website showcasing car cup holder tissues with a clean design and smooth browsing experience.",
     year: "2023",
-    domain: "nexus-crm.com",
+    domain: "https://softell.in",
+  },
+  {
+    id: 5,
+    title: "Ferrari Beta Landing Page",
+    category: "Landing Page",
+    image:
+      "https://res.cloudinary.com/ditmvxlon/image/upload/v1774516267/this_laptop_wallpaper_202603261440_a7fgna.jpg",
+    description:
+      "A sleek and modern landing page designed to showcase the Ferrari Beta experience with clean visuals and engaging layout.",
+    year: "2025",
+    domain: "https://ferrari-beta.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Aurora Branding",
+    category: "Visual Identity",
+    image:
+      "https://i.pinimg.com/1200x/19/37/41/19374174a254102a7de773308ed07bd2.jpg",
+    description:
+      "Dynamic visual storytelling and minimalist branding for the modern creative.",
+    year: "2024",
+    domain: "aurora-design.com",
+  },
+  {
+    id: 7,
+    title: "Solaris Hub",
+    category: "Mobile App",
+    image:
+      "https://i.pinimg.com/1200x/f5/4a/d8/f54ad8591227f8c2710b4b8255080455.jpg",
+    description:
+      "Integrated smart home control system with seamless biometric authentication.",
+    year: "2023",
+    domain: "solaris-hub.io",
   },
 ];

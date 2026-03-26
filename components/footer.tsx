@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white pt-32 pb-8 overflow-hidden">
+    <footer className="bg-[#191816] text-white pt-32 pb-8 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Top Section: Navigation & Contact */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16 mb-20 md:mb-32">
@@ -61,10 +61,7 @@ export function Footer() {
                     name: "LinkedIn",
                     href: "https://www.linkedin.com/in/devyte-digital-b899a03b2/",
                   },
-                  {
-                    name: "WhatsApp",
-                    href: "https://wa.me/919747659606",
-                  },
+
                   {
                     name: "Behance",
                     href: "https://www.behance.net/devytedigital",
