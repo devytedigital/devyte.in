@@ -81,8 +81,8 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col space-y-2 text-left">
                 <p className="text-xl md:text-2xl font-light text-white/60 leading-relaxed max-w-sm">
-                  noviindus technologies, 1st floor, gsbc, east nadakkave,
-                  kozhikode, kerala 673006
+                  devyte digitals, 1st floor, gsbc, east nadakkave, kozhikode,
+                  kerala 673006
                 </p>
               </div>
             </div>
