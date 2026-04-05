@@ -3,19 +3,19 @@
 import { motion } from "framer-motion";
 
 const clientsRow1 = [
-  { name: "ZEGO", style: "font-bold tracking-tighter" },
-  { name: "sendinblue", style: "font-medium lowercase tracking-tight" },
-  { name: "Loop", style: "font-serif italic" },
-  { name: "exakt health", style: "font-semibold tracking-tight" },
-  { name: "velobici", style: "font-serif font-light italic" },
+  { name: "SOFTELL", style: "font-bold tracking-tighter" },
+  { name: "Dream Pilgrim", style: "font-medium lowercase tracking-tight" },
+  { name: "Mayband", style: "font-serif italic" },
+  { name: "reemdates", style: "font-semibold tracking-tight" },
+  { name: "mammascrib", style: "font-serif font-light italic" },
 ];
 
 const clientsRow2 = [
-  { name: "HEAVYBIT", style: "font-black tracking-widest uppercase" },
-  { name: "blotout", style: "font-normal lowercase" },
-  { name: "LAK Gallery", style: "font-serif tracking-tighter" },
-  { name: "Vantage", style: "font-bold tracking-tight" },
-  { name: "Nova", style: "font-medium lowercase" },
+  { name: "SOFTELL", style: "font-bold tracking-tighter" },
+  { name: "Dream Pilgrim", style: "font-medium lowercase tracking-tight" },
+  { name: "Mayband", style: "font-serif italic" },
+  { name: "reemdates", style: "font-semibold tracking-tight" },
+  { name: "mammascrib", style: "font-serif font-light italic" },
 ];
 
 export function Clients() {
@@ -27,7 +27,7 @@ export function Clients() {
       <div className="container mx-auto px-6 md:px-12 mb-16 md:mb-24 px-1">
         {/* Cinematic Header Block */}
         <div className="scale-in-sm">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -45,7 +45,7 @@ export function Clients() {
         <div className="absolute right-0 top-0 bottom-0 w-24 md:w-64 bg-gradient-to-l from-[#191816] to-transparent z-10 pointer-events-none" />
 
         {/* Row 1 - Moves Left */}
-        <motion.div 
+        <motion.div
           className="flex gap-4 md:gap-8 whitespace-nowrap"
           animate={{ x: [0, "-50%"] }}
           transition={{
@@ -59,7 +59,9 @@ export function Clients() {
               key={index}
               className="w-48 md:w-64 lg:w-80 h-24 md:h-32 rounded-xl md:rounded-2xl border border-white/10 bg-white/[0.02] flex items-center justify-center shrink-0"
             >
-              <span className={`text-sm md:text-base lg:text-lg text-white ${client.style}`}>
+              <span
+                className={`text-sm md:text-base lg:text-lg text-white ${client.style}`}
+              >
                 {client.name}
               </span>
             </div>
@@ -67,7 +69,7 @@ export function Clients() {
         </motion.div>
 
         {/* Row 2 - Moves Right */}
-        <motion.div 
+        <motion.div
           className="flex gap-4 md:gap-8 whitespace-nowrap"
           animate={{ x: ["-50%", "0%"] }}
           transition={{
@@ -81,7 +83,9 @@ export function Clients() {
               key={index}
               className="w-48 md:w-64 lg:w-80 h-24 md:h-32 rounded-xl md:rounded-2xl border border-white/10 bg-white/[0.02] flex items-center justify-center shrink-0"
             >
-              <span className={`text-sm md:text-base lg:text-lg text-white ${client.style}`}>
+              <span
+                className={`text-sm md:text-base lg:text-lg text-white ${client.style}`}
+              >
                 {client.name}
               </span>
             </div>

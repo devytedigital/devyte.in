@@ -4,33 +4,35 @@ import { motion } from "framer-motion";
 
 const members = [
   {
-    name: "rahul chandran",
-    role: "Founder & Creative Director",
+    name: "Mohammed Shanif CC",
+    role: "CEO & Web Developer",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
+      "https://res.cloudinary.com/ditmvxlon/image/upload/v1775384937/20260307_155651.jpg_belzur.jpg",
   },
   {
-    name: "sneha nair",
-    role: "Technical Lead",
+    name: "Jabeel Roshan P",
+    role: "CMO & Flutter Developer",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop",
+      "https://res.cloudinary.com/ditmvxlon/image/upload/v1775385187/IMG_8376_tcohbj.jpg",
   },
   {
-    name: "arjun das",
-    role: "Strategy & Operations",
+    name: "Fuhad Saneen",
+    role: "COO & Digital Marketer",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop",
+      "https://i.pinimg.com/280x280_RS/e1/08/21/e10821c74b533d465ba888ea66daa30f.jpg",
   },
   {
-    name: "priya sharma",
-    role: "Lead Designer",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1974&auto=format&fit=crop"
+    name: "Zidan Ali",
+    role: "Graphic Designer",
+    image:
+      "https://i.pinimg.com/280x280_RS/e1/08/21/e10821c74b533d465ba888ea66daa30f.jpg",
   },
   {
-    name: "vikram rathore",
-    role: "Project Manager",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop"
-  }
+    name: "Adinan VT",
+    role: "Wordpress Developer",
+    image:
+      "https://i.pinimg.com/280x280_RS/e1/08/21/e10821c74b533d465ba888ea66daa30f.jpg",
+  },
 ];
 
 export function AboutTeam() {
@@ -54,41 +56,42 @@ export function AboutTeam() {
             viewport={{ once: true }}
             className="text-2xl md:text-5xl lg:text-7xl font-normal leading-[1.1] tracking-tighter max-w-4xl md:text-right"
           >
-            A collective of creators, engineers, and strategists driven by precision.
+            A collective of creators, engineers, and strategists driven by
+            precision.
           </motion.h3>
         </div>
 
-        {/* Team Grid - High Density 5-Column Design */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-4">
-           {members.map((member, index) => (
-              <motion.div 
-                key={index}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="group relative flex flex-col items-center text-center"
-              >
-                 {/* Compact Square Image */}
-                 <div className="relative w-full aspect-square overflow-hidden rounded-[2rem] bg-[#1c1c1c] mb-6 ring-1 ring-white/5 shadow-xl">
-                    <img 
-                       src={member.image} 
-                       alt={member.name}
-                       className="w-full h-full object-cover"
-                    />
-                 </div>
-                 
-                 {/* Minimalist Editorial Typography */}
-                 <div className="flex flex-col space-y-2">
-                    <h4 className="text-lg md:text-xl font-normal tracking-tight lowercase">
-                       {member.name}
-                    </h4>
-                    <p className="text-[8px] md:text-[9px] uppercase tracking-[0.3em] text-white/30 font-light">
-                       {member.role}
-                    </p>
-                 </div>
-              </motion.div>
-           ))}
+        {/* Team Grid - High Density 5-Column Design - Centered Logic */}
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16">
+          {members.map((member, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              className="group relative flex flex-col items-center text-center w-full sm:w-[calc(45%-16px)] md:w-[calc(30%-24px)] lg:w-[calc(18%-32px)] min-w-[200px]"
+            >
+              {/* Compact Square Image */}
+              <div className="relative w-full aspect-square overflow-hidden rounded-[2rem] bg-[#1c1c1c] mb-6 ring-1 ring-white/5 shadow-xl">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Minimalist Editorial Typography */}
+              <div className="flex flex-col space-y-2">
+                <h4 className="text-lg md:text-xl font-normal tracking-tight lowercase">
+                  {member.name}
+                </h4>
+                <p className="text-[8px] md:text-[9px] uppercase tracking-[0.3em] text-white/30 font-light">
+                  {member.role}
+                </p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,19 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Palette, Layers, SearchCheck } from "lucide-react";
 import Link from "next/link";
 
 const services = [
   {
     title: "Branding",
+    icon: Palette,
     description: "From logo creation to visual identity, we establish brand guidelines to help you grow and connect with your customers.",
   },
   {
     title: "UX and UI design",
+    icon: Layers,
     description: "We build beautiful and functional interfaces, to help craft the best user experiences for your target audience on both web and mobile.",
   },
   {
     title: "Design audit",
+    icon: SearchCheck,
     description: "Find design improvement opportunities across your website, ecommerce, or app and get instantaneous solutions for better results.",
   },
 ];
@@ -72,6 +76,10 @@ export function Services() {
             >
               {/* Animated top border on hover */}
               <div className="absolute top-0 left-0 w-0 h-[2px] bg-black group-hover:w-full transition-all duration-500 ease-in-out" />
+              
+              <div className="text-black/30 group-hover:text-black transition-colors duration-500 mb-8">
+                <service.icon className="w-10 h-10" />
+              </div>
               
               <h3 className="text-2xl md:text-3xl font-bold mb-6 tracking-tight group-hover:translate-x-1 transition-transform duration-300">
                 {service.title}
